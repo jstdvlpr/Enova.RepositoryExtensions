@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" xmlns="http://www.enova.pl/schema/form.xsd">
+  <Grid Name="List" IsToolbarVisible="false">
+    <!--<Field Value="{Id}" />-->
+    <Field EditValue="{Adres}" CaptionHtml="Adres URL repozytorium" />
+    <Field EditValue="{Typ}" />
+    <Field EditValue="{Opis}" />
+  </Grid>
+</DataForm>

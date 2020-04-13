@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          RightName="Page:CommitsExtenderPage" xmlns="http://www.enova.pl/schema/form.xsd"
+          DataType="Soneta.Repozytorium.Repozytorium,Soneta.Repozytorium" Priority="10">
+  <Page Name="CommitsExtenderPage" CaptionHtml="Commity" DataContext="{DataSource}">
+    <Group CaptionHtml="Commity" DataContext="{new FetchCommitsExtender}">
+      <Label CaptionHtml="Pobieranie commitów ..." Class="LargeFont" Visibility="{IsLoading()}"/>
+      <Label CaptionHtml="Wystąpił błąd przy pobieraniu" Class="LargeFont" Visibility="{IsError()}"/>
+      <Grid EditValue="{Value}" Visibility="{IsLoaded()}" Width="*" Height="*" >
+        <Field CaptionHtml="Data" EditValue="{Date}" />
+        <Grid EditValue="{CommitsByUser}" >
+          <Field CaptionHtml="Użytkownik" EditValue="{User.Email}" />
+          <Field CaptionHtml="Nazwa użytkownika" EditValue="{User.Name}" />
+          <Field CaptionHtml="Ilość commitów danego dnia" EditValue="{Commits.Length}" />
+          <Field CaptionHtml="Średnia ilość commitów dziennie" EditValue="{User.AverageCommitsCount}" />
+          <Grid EditValue="{Commits}">
+            <Field CaptionHtml="Czas" EditValue="{Time}" />
+            <Field CaptionHtml="Branch" EditValue="{Branch}" />
+            <Field CaptionHtml="Opis" EditValue="{Message}" />
+          </Grid>
+        </Grid>
+      </Grid>
+    </Group>
+  </Page>
+</DataForm>
