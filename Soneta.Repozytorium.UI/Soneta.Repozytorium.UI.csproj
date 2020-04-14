@@ -241,19 +241,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Demo\001.Podstawy.xml" />
-    <Content Include="Demo\002.Podstawy.gold.xml" />
-    <Content Include="Demo\002.Podstawy.silver.xml" />
-    <Content Include="Demo\100.Handel.xml" />
-    <Content Include="Demo\100.Kadry.gold.xml" />
-    <Content Include="Demo\100.Kadry.silver.xml" />
-    <Content Include="Demo\100.Ksiega.gold.xml" />
-    <Content Include="Demo\101.BazaDemo_Listy.xml" />
-    <Content Include="Demo\101.Kadry.xml" />
-    <Content Include="Demo\102.AWW_Handel.xml" />
-    <Content Include="Soneta.files.xml" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
