@@ -25,7 +25,8 @@ namespace Soneta.Repozytorium
         {
             services = new Dictionary<RepositoryType, IRepositoryService>()
             {
-                { RepositoryType.Git, new GitHubService() }
+                { RepositoryType.Git, new GitHubService() },
+                { RepositoryType.SVN, new SvnService() }
             };
         }
 

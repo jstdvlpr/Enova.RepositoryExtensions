@@ -239,6 +239,7 @@
     <Compile Include="Services\GitHubService.cs" />
     <Compile Include="Repozytorium.business.cs" />
     <Compile Include="Services\Interface\IRepositoryService.cs" />
+    <Compile Include="Services\SvnService.cs" />
     <Compile Include="ViewModel\Commit.cs" />
     <Compile Include="ViewModel\CommitsByDate.cs" />
     <Compile Include="ViewModel\CommitsByUser.cs" />
