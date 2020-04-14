@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs
+/packages
+/Soneta.Repozytorium/bin
+/Soneta.Repozytorium/obj
+/Soneta.Repozytorium.UI/bin
+/Soneta.Repozytorium.UI/obj
+/Soneta.Repozytorium.Tests/bin
+/Soneta.Repozytorium.Tests/obj
+/Soneta.Repozytorium/Soneta.Repozytorium.csproj.user
+/Soneta.Repozytorium.UI/Soneta.Repozytorium.csproj.user
+/Soneta.Repozytorium.Tests/Soneta.Repozytorium.Tests.csproj.user
